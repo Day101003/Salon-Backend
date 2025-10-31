@@ -258,3 +258,4 @@ C:\Users\dayan\OneDrive - Universidad de Costa Rica\Escritorio\Lenguajes\.NET\Sa
 C:\Users\dayan\OneDrive - Universidad de Costa Rica\Escritorio\Lenguajes\.NET\Salon-Info\obj\Debug\net8.0\ref\Salon-Info.dll
 C:\Users\dayan\OneDrive - Universidad de Costa Rica\Escritorio\Lenguajes\.NET\Salon-Info\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\dayan\OneDrive - Universidad de Costa Rica\Escritorio\Lenguajes\.NET\Salon-Info\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\dayan\OneDrive - Universidad de Costa Rica\Escritorio\Lenguajes\.NET\Salon-Info\bin\Debug\net8.0\BCrypt.Net-Next.dll

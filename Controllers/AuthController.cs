@@ -23,24 +23,22 @@ namespace Salon_Info.Controllers
         }
 
         [HttpPost("login")]
-        [AllowAnonymous] // Permitir acceso sin token
+        [AllowAnonymous]
         public IActionResult Login([FromBody] LoginDto dto)
         {
-            // Validar usuario
             if (dto == null || string.IsNullOrEmpty(dto.Email) || string.IsNullOrEmpty(dto.Password))
             {
                 return BadRequest(new { message = "Datos de entrada inválidos." });
             }
 
-            var user = _context.User.FirstOrDefault(u => u.Correo == dto.Email && u.Contrasena == dto.Password);
-            if (user == null)
+            var user = _context.User.FirstOrDefault(u => u.Correo == dto.Email);
+            if (user == null || !BCrypt.Net.BCrypt.Verify(dto.Password, user.Contrasena))
             {
                 return Unauthorized(new { message = "Credenciales inválidas." });
             }
 
             var token = GenerateJwtToken(user);
 
-            // Devolver el token en el cuerpo de la respuesta
             return Ok(new { token });
         }
 
@@ -48,10 +46,12 @@ namespace Salon_Info.Controllers
         {
             var claims = new[]
             {
-                new Claim(JwtRegisteredClaimNames.Sub, user.Correo),
-                new Claim("IdUsuario", user.IdUsuario.ToString()),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-            };
+        new Claim(JwtRegisteredClaimNames.Sub, user.Correo),
+        new Claim("IdUsuario", user.IdUsuario.ToString()), // verificar que esto esté
+        new Claim("Tipo", user.Tipo.ToString()),
+        new Claim("Nombre", user.Nombre), // agregar si no está
+        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+    };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);

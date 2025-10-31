@@ -7,7 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Salon_Info.Data;
 using Salon_Info.Models;
-
+using BCrypt.Net;
+using Microsoft.AspNetCore.Authorization; // Add this directive
+    
 namespace Salon_Info.Controllers
 {
     [Route("api/[controller]")]
@@ -26,6 +28,37 @@ namespace Salon_Info.Controllers
         public async Task<ActionResult<IEnumerable<User>>> GetUser()
         {
             return await _context.User.ToListAsync();
+        }
+
+        // GET: api/Users/me
+        [HttpGet("me")]
+        [Authorize] // requiere token válido
+        public IActionResult GetCurrentUser()
+        {
+            var userId = User.FindFirst("IdUsuario")?.Value;
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized(new { message = "Token inválido." });
+            }
+
+            var user = _context.User.Find(int.Parse(userId));
+            if (user == null)
+            {
+                return NotFound(new { message = "Usuario no encontrado." });
+            }
+
+            // retornar solo datos necesarios (no contraseña)
+            return Ok(new
+            {
+                idUsuario = user.IdUsuario,
+                nombre = user.Nombre,
+                correo = user.Correo,
+                telefono = user.Telefono,
+                rutaImg = user.RutaImg,
+                tipo = user.Tipo,
+                fechaRegistro = user.FechaRegistro,
+                preferencias = user.Preferencias
+            });
         }
 
         // GET: api/Users/5
@@ -98,6 +131,36 @@ namespace Salon_Info.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+
+        [HttpPost("register")]
+        [AllowAnonymous]
+        public IActionResult Register([FromBody] UserDto dto)
+        {
+            if (dto == null || string.IsNullOrEmpty(dto.Correo) || string.IsNullOrEmpty(dto.Contrasena))
+            {
+                return BadRequest(new { message = "Datos de entrada inválidos." });
+            }
+
+            // Generar el hash de la contraseña
+            var hashedPassword = BCrypt.Net.BCrypt.HashPassword(dto.Contrasena);
+
+            var user = new User
+            {
+                Nombre = dto.Nombre,
+                Telefono = dto.Telefono,
+                Correo = dto.Correo,
+                FechaRegistro = DateTime.Now,
+                Contrasena = hashedPassword, // Guardar la contraseña cifrada
+                RutaImg = dto.RutaImg,
+                Tipo = dto.Tipo,
+                Preferencias = dto.Preferencias
+            };
+
+            _context.User.Add(user);
+            _context.SaveChanges();
+
+            return Ok(new { message = "Usuario registrado exitosamente." });
         }
 
         private bool UserExists(int id)
