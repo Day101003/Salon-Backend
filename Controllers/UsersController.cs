@@ -9,7 +9,8 @@ using Salon_Info.Data;
 using Salon_Info.Models;
 using BCrypt.Net;
 using Microsoft.AspNetCore.Authorization; // Add this directive
-    
+using System.IO;
+
 namespace Salon_Info.Controllers
 {
     [Route("api/[controller]")]
@@ -76,13 +77,59 @@ namespace Salon_Info.Controllers
         }
 
         // PUT: api/Users/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUser(int id, User user)
+        public async Task<IActionResult> PutUser(int id, [FromForm] UserUpdateDto dto)
         {
-            if (id != user.IdUsuario)
+            var user = await _context.User.FindAsync(id);
+            if (user == null)
             {
-                return BadRequest();
+                return NotFound(new { message = "Usuario no encontrado." });
+            }
+
+            // Actualizar datos básicos
+            user.Nombre = dto.Nombre;
+            user.Correo = dto.Correo;
+            user.Telefono = dto.Telefono ?? "";
+            user.Preferencias = dto.Preferencias ?? "";
+
+            // Manejar imagen si se envió
+            if (dto.ImagenPerfil != null && dto.ImagenPerfil.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "perfiles");
+
+                // Crear directorio si no existe
+                if (!Directory.Exists(uploadsFolder))
+                {
+                    Directory.CreateDirectory(uploadsFolder);
+                }
+
+                // Eliminar imagen anterior si existe
+                if (!string.IsNullOrEmpty(user.RutaImg))
+                {
+                    var oldImagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", user.RutaImg.TrimStart('/'));
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        try
+                        {
+                            System.IO.File.Delete(oldImagePath);
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine($"Error al eliminar imagen anterior: {ex.Message}");
+                        }
+                    }
+                }
+
+                // Guardar nueva imagen
+                var uniqueFileName = $"{Guid.NewGuid()}_{dto.ImagenPerfil.FileName}";
+                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await dto.ImagenPerfil.CopyToAsync(stream);
+                }
+
+                user.RutaImg = $"/uploads/perfiles/{uniqueFileName}";
             }
 
             _context.Entry(user).State = EntityState.Modified;
@@ -103,7 +150,7 @@ namespace Salon_Info.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok(new { message = "Perfil actualizado exitosamente." });
         }
 
         // POST: api/Users
@@ -132,30 +179,66 @@ namespace Salon_Info.Controllers
 
             return NoContent();
         }
+        // PATCH: api/Users/5/tipo
+        [HttpPatch("{id}/tipo")]
+        [Authorize]
+        public async Task<IActionResult> UpdateUserType(int id, [FromBody] UpdateTipoDto dto)
+        {
+            var user = await _context.User.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound(new { message = "Usuario no encontrado." });
+            }
+
+            user.Tipo = dto.Tipo;
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Tipo de usuario actualizado.", tipo = user.Tipo });
+        }
 
         [HttpPost("register")]
         [AllowAnonymous]
-        public IActionResult Register([FromBody] UserDto dto)
+        public IActionResult Register([FromForm] UserRegisterDto dto)
         {
             if (dto == null || string.IsNullOrEmpty(dto.Correo) || string.IsNullOrEmpty(dto.Contrasena))
             {
                 return BadRequest(new { message = "Datos de entrada inválidos." });
             }
 
-            // Generar el hash de la contraseña
             var hashedPassword = BCrypt.Net.BCrypt.HashPassword(dto.Contrasena);
 
             var user = new User
             {
                 Nombre = dto.Nombre,
-                Telefono = dto.Telefono,
+                Telefono = dto.Telefono ?? "",
                 Correo = dto.Correo,
                 FechaRegistro = DateTime.Now,
-                Contrasena = hashedPassword, // Guardar la contraseña cifrada
-                RutaImg = dto.RutaImg,
-                Tipo = dto.Tipo,
-                Preferencias = dto.Preferencias
+                Contrasena = hashedPassword,
+                RutaImg = "",
+                Tipo = dto.Tipo ?? 2, // Change to int instead of string
+                Preferencias = dto.Preferencias ?? ""
             };
+
+            // Manejar imagen si se envió
+            if (dto.ImagenPerfil != null && dto.ImagenPerfil.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "perfiles");
+
+                if (!Directory.Exists(uploadsFolder))
+                {
+                    Directory.CreateDirectory(uploadsFolder);
+                }
+
+                var uniqueFileName = $"{Guid.NewGuid()}_{dto.ImagenPerfil.FileName}";
+                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    dto.ImagenPerfil.CopyTo(stream);
+                }
+
+                user.RutaImg = $"/uploads/perfiles/{uniqueFileName}";
+            }
 
             _context.User.Add(user);
             _context.SaveChanges();

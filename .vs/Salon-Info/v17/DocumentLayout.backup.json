@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|c:\\users\\dayan\\onedrive - universidad de costa rica\\escritorio\\lenguajes\\.net\\salon-info\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|c:\\users\\dayan\\onedrive - universidad de costa rica\\escritorio\\lenguajes\\.net\\salon-info\\models\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|solutionrelative:models\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|c:\\users\\dayan\\onedrive - universidad de costa rica\\escritorio\\lenguajes\\.net\\salon-info\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|c:\\users\\dayan\\onedrive - universidad de costa rica\\escritorio\\lenguajes\\.net\\salon-info\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|solutionrelative:models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|c:\\users\\dayan\\onedrive - universidad de costa rica\\escritorio\\lenguajes\\.net\\salon-info\\models\\updatetipodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|solutionrelative:models\\updatetipodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|c:\\users\\dayan\\onedrive - universidad de costa rica\\escritorio\\lenguajes\\.net\\salon-info\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|c:\\users\\dayan\\onedrive - universidad de costa rica\\escritorio\\lenguajes\\.net\\salon-info\\models\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|solutionrelative:models\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|c:\\users\\dayan\\onedrive - universidad de costa rica\\escritorio\\lenguajes\\.net\\salon-info\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|c:\\users\\dayan\\onedrive - universidad de costa rica\\escritorio\\lenguajes\\.net\\salon-info\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|c:\\users\\dayan\\onedrive - universidad de costa rica\\escritorio\\lenguajes\\.net\\salon-info\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|c:\\users\\dayan\\onedrive - universidad de costa rica\\escritorio\\lenguajes\\.net\\salon-info\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|solutionrelative:models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C90D90C-6586-4266-999B-027C8DE4E736}|Salon-Info.csproj|c:\\users\\dayan\\onedrive - universidad de costa rica\\escritorio\\lenguajes\\.net\\salon-info\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -86,31 +98,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "UpdateTipoDto.cs",
+              "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Models\\UpdateTipoDto.cs",
+              "RelativeDocumentMoniker": "Models\\UpdateTipoDto.cs",
+              "ToolTip": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Models\\UpdateTipoDto.cs",
+              "RelativeToolTip": "Models\\UpdateTipoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T14:38:55.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Models\\UserUpdateDto.cs",
+              "RelativeDocumentMoniker": "Models\\UserUpdateDto.cs",
+              "ToolTip": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Models\\UserUpdateDto.cs",
+              "RelativeToolTip": "Models\\UserUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T14:23:34.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T04:08:50.486Z"
+              "WhenOpened": "2025-10-24T04:08:50.486Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCIAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T00:34:33.853Z"
+              "WhenOpened": "2025-10-29T00:34:33.853Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "UserRegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Models\\UserRegisterDto.cs",
+              "RelativeDocumentMoniker": "Models\\UserRegisterDto.cs",
+              "ToolTip": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Models\\UserRegisterDto.cs",
+              "RelativeToolTip": "Models\\UserRegisterDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T15:07:54.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Salon_InfoContext.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Data\\Salon_InfoContext.cs",
               "RelativeDocumentMoniker": "Data\\Salon_InfoContext.cs",
@@ -122,20 +175,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAwEEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T04:53:07.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAOUAAAAAAAAAAAAAwPUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T04:47:26.652Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -147,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoriesController.cs",
@@ -159,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Models\\UserDto.cs",
               "RelativeDocumentMoniker": "Models\\UserDto.cs",
@@ -167,11 +233,12 @@
               "RelativeToolTip": "Models\\UserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T14:15:04.743Z"
+              "WhenOpened": "2025-10-30T14:15:04.743Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Date.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Models\\Date.cs",
               "RelativeDocumentMoniker": "Models\\Date.cs",
@@ -183,19 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T04:53:07.934Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Audit.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Models\\Audit.cs",
               "RelativeDocumentMoniker": "Models\\Audit.cs",
@@ -207,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Models\\Category.cs",
@@ -219,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "AuditoriasController.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Controllers\\AuditoriasController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuditoriasController.cs",
@@ -231,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Service.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Models\\Service.cs",
               "RelativeDocumentMoniker": "Models\\Service.cs",
@@ -243,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
@@ -255,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
@@ -267,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "CitasController.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Controllers\\CitasController.cs",
               "RelativeDocumentMoniker": "Controllers\\CitasController.cs",
@@ -279,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "ServicesController.cs",
               "DocumentMoniker": "C:\\Users\\dayan\\OneDrive - Universidad de Costa Rica\\Escritorio\\Lenguajes\\.NET\\Salon-Info\\Controllers\\ServicesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ServicesController.cs",

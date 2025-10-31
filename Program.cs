@@ -16,10 +16,10 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular", policy =>
     {
-        policy.WithOrigins("http://localhost:4200") // Cambia al origen de tu frontend Angular
+        policy.WithOrigins("http://localhost:4200")
               .AllowAnyHeader()
               .AllowAnyMethod()
-              .AllowCredentials(); // Permitir credenciales
+              .AllowCredentials();
     });
 });
 
@@ -52,8 +52,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Usar CORS antes de MapControllers
+// IMPORTANTE: Usar CORS antes de autenticación
 app.UseCors("AllowAngular");
+
+// Servir archivos estáticos (NUEVO - para las imágenes subidas)
+app.UseStaticFiles();
 
 app.UseAuthentication();
 app.UseAuthorization();

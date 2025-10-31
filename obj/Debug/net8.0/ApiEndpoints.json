@@ -646,9 +646,29 @@
         "IsRequired": true
       },
       {
-        "Name": "user",
-        "Type": "Salon_Info.Models.User",
-        "IsRequired": true
+        "Name": "Nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Correo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Telefono",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Preferencias",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImagenPerfil",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -667,6 +687,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Salon_Info.Controllers.UsersController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "api/Users/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

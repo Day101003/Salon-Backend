@@ -1045,6 +1045,18 @@
         }
       }
     },
+    "/api/Users/me": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Users/{id}": {
       "get": {
         "tags": [
@@ -1101,19 +1113,44 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/User"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/User"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/User"
+                "type": "object",
+                "properties": {
+                  "Nombre": {
+                    "type": "string"
+                  },
+                  "Correo": {
+                    "type": "string"
+                  },
+                  "Telefono": {
+                    "type": "string"
+                  },
+                  "Preferencias": {
+                    "type": "string"
+                  },
+                  "ImagenPerfil": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Nombre": {
+                  "style": "form"
+                },
+                "Correo": {
+                  "style": "form"
+                },
+                "Telefono": {
+                  "style": "form"
+                },
+                "Preferencias": {
+                  "style": "form"
+                },
+                "ImagenPerfil": {
+                  "style": "form"
+                }
               }
             }
           }

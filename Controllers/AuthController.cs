@@ -5,7 +5,8 @@ using Salon_Info.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Microsoft.AspNetCore.Authorization; // Add this directive
+using Microsoft.AspNetCore.Authorization;
+using System.IO;
 
 namespace Salon_Info.Controllers
 {
@@ -46,12 +47,12 @@ namespace Salon_Info.Controllers
         {
             var claims = new[]
             {
-        new Claim(JwtRegisteredClaimNames.Sub, user.Correo),
-        new Claim("IdUsuario", user.IdUsuario.ToString()), // verificar que esto esté
-        new Claim("Tipo", user.Tipo.ToString()),
-        new Claim("Nombre", user.Nombre), // agregar si no está
-        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-    };
+                new Claim(JwtRegisteredClaimNames.Sub, user.Correo),
+                new Claim("IdUsuario", user.IdUsuario.ToString()),
+                new Claim("Tipo", user.Tipo.ToString()),
+                new Claim("Nombre", user.Nombre),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+            };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -65,8 +66,9 @@ namespace Salon_Info.Controllers
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
-    }
+    } // ? Fin de AuthController
 
+    // Clases DTO
     public class LoginDto
     {
         public string Email { get; set; }
